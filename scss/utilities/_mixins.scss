@@ -1,0 +1,5 @@
+@mixin mq($break:$brk-narrow) {
+  @media (min-width: $break) {
+    @content;
+  }
+}

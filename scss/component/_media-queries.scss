@@ -2,7 +2,7 @@
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
-@include mq{
+@media (min-width: $brk-narrow){
 
   .container {
     max-width: 1400px;

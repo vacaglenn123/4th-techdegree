@@ -1,31 +1,3 @@
-/* ============================================= */
- /* Typography */
- /* ============================================= */
-
- .headline-primary {
-  color: $viking;
-  margin-left: 10px;
-}
-
-.headline-secondary {
-  font-weight: 300;
-  color:$grey;
-}
-
-.link {
-  color: $viking;
-  font-weight: 700;
-}
-
-.blockquote {
-  font-size: 1.5em;
-  font-weight: 300;
-  font-style: italic;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 8px solid $viking;
-  border-radius: 5px;
-}
 
 /* ============================================= */
 /*              Base styles                      */
@@ -34,8 +6,8 @@
 
 
 * {
-  font-family: $font-family;
-  color: $grey;
+  font-family: 'Lato', sans-serif;
+  color: $paragraphs;
   box-sizing: border-box;
 }
 
@@ -49,6 +21,35 @@ a {
 }
 
 
+
+/* ============================================= */
+ /* Typography */
+ /* ============================================= */
+
+ .headline-primary {
+  color: $headers;
+  margin-left: 10px;
+}
+
+.headline-secondary {
+  font-weight: 300;
+  color: $paragraphs;
+}
+
+.link {
+  color: $col-11;
+  font-weight: 700;
+}
+
+.blockquote {
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: italic;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 8px solid $headers;
+  border-radius: 5px;
+}
 
 
 

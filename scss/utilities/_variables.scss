@@ -1,21 +1,40 @@
-// Color Variables
+// COLOR VARIABLES
 
-$grey: #777; // dark grey
-$viking: #58E1C1; //teal
-$white: #fff; // white
-$malibu:#51ddfc ; //light blue
-$sunglo: #e4757a; // cherry pink
+$paragraphs: #777;
+$headers: #58e1c1;
+$btn-colors: #fff;
+$border: #ccc;
 
-$purple-mountain-majesty: #927bc1; //purple
-$emerald: #63cc82; // soft green
-$coral: #fd7856; // tomato
+// GRID COLORS
 
-// Media Query break points
+$col-1: #927bc1;
+$col-2: #fd7856;
+$col-3: #deb2ee;
+$col-4: #7ee6fd;
+$col-5: #88d9a0;
+$col-6: #4da2bb;
+$col-7: #ec9fa3;
+$col-8: #fd9f85;
+$col-9: #e4757a;
+$col-10: #63cc82;
+$col-11: #51ddfc;
+$col-12: #80e8d1;
 
-$brk-narrow: 768px;
+// BUTTONS
+$defaults: #51ddfc;
+$default-light: lighten($defaults, 15%);
 
+$error: #e4757a;
+$error-light: lighten($error, 15%);
 
-// Fonts
+$info: #927bc1;
+$info-light: lighten($info, 15%);
 
-$font-family:'Lato', sans-serif;
+$success: #63cc82;
+$success-light: lighten($success, 15%);
 
+$warning: #fd7856;
+$warning-light: lighten($warning, 15%);
+
+// BREAKPOINTS
+$break-m: 768px;

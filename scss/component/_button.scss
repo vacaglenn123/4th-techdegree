@@ -6,29 +6,48 @@
 .btn {
   margin-top: 15px;
   width: 100%;
-  color: $white;
+  color: $btn-colors;
   border: none;
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
+  transition: background-color 3s;
+  @media (min-width: $break-m) {
+    padding: 10px 30px;
+  }
 }
 
 .default {
-  background-color: $malibu;
+  background-color: $defaults;
+  &:hover {
+    background-color: $default-light;
+  }
 }
 
 .error {
-  background-color: $sunglo;
+  background-color: $error;
+  &:hover {
+    background-color: $error-light;
+  }
 }
 
 .info {
-  background-color: $purple-mountain-majesty;
+  background-color: $info;
+  &:hover {
+    background-color: $info-light;
+  }
 }
 
 .success {
-  background-color: $emerald;
+  background-color: $success;
+  &:hover {
+    background-color: $success-light;
+  }
 }
 
 .warning {
-  background-color: $coral;
+  background-color: $warning;
+  &:hover {
+    background-color: $warning-light;
+  }
 }

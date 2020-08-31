@@ -5,13 +5,21 @@
 
 .container {
   padding: 0 10px;
+  @media (min-width: $break-m) {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .row {
-  display: flex;
-  flex-direction: column;
-  padding: 1em 10px;
-}
+  @include flex;
+     padding: 1em 10px;
+     @media (min-width: $break-m) {
+     flex-direction: row;
+     }
+    }
 
 [class^=col] {
   margin-top: 10px;
@@ -19,54 +27,60 @@
   min-height: 25px;
   padding: 10px;
   border-radius: 5px;
+  @media (min-width: $break-m) {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+} 
 }
 
 .theme.col-1 {
-  background-color: $purple-mountain-majesty;
+  background-color: $col-1;
 }
 
 .theme.col-2 {
-  background-color: $coral;
+  background-color: $col-2;
 }
 
 .theme.col-3 {
-  background-color: #deb2ee;
+  background-color: $col-3;
 }
 
 .theme.col-4 {
-  background-color: #7ee6fd;
+  background-color: $col-4;
 }
 
 .theme.col-5 {
-  background-color: #88d9a0;
+  background-color: $col-5;
 }
 
 .theme.col-6 {
-  background-color: #4da2bb;
+  background-color: $col-6;
 }
 
 .theme.col-7 {
-  background-color: #ec9fa3;
+  background-color: $col-7;
 }
 
 .theme.col-8 {
-  background-color: #fd9f85;
+  background-color: $col-8;
 }
 
 .theme.col-9 {
-  background-color: $sunglo;
+  background-color: $col-9;
 }
 
 .theme.col-10 {
-  background-color: $emerald;
+  background-color: $col-10;
 }
 
 .theme.col-11 {
-  background-color: $malibu;
+  background-color: $col-11;
 }
 
 .theme.col-12 {
-  background-color: #80e8d1;
+  background-color: $col-12;
 }
 
 .card {
